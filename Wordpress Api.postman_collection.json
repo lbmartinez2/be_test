@@ -38,7 +38,7 @@
 					}
 				},
 				"url": "http://localhost:3000/api/users",
-				"description": "Fetches all users from the given Wordpress website. User details are required."
+				"description": "Fetches all users from the given Wordpress website. User details are required as headers."
 			},
 			"response": []
 		}
