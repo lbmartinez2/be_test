@@ -33,5 +33,6 @@ This project is a Rails application that interacts with the WordPress API to fet
     WP_API_URL= [your_website]/wp-json/wp/v2
 
 4. **Start the Server**
+   
     rails server
 
