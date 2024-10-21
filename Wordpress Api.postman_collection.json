@@ -19,12 +19,14 @@
 				"header": [
 					{
 						"key": "X-Username",
-						"value": "admin",
+						"value": "{{WORDPRESS_USERNAME}}",
+						"description": "username",
 						"type": "text"
 					},
 					{
 						"key": "X-Password",
 						"value": "{{WORDPRESS_PASSWORD}}",
+						"description": "password",
 						"type": "text"
 					}
 				],
@@ -38,7 +40,7 @@
 					}
 				},
 				"url": "http://localhost:3000/api/users",
-				"description": "Fetches all users from the given Wordpress website. User details are required as headers."
+				"description": "Fetches all users from the given Wordpress website. User details are required as headers. The api link is kept in a .env variable in the root directory of the project file."
 			},
 			"response": []
 		}

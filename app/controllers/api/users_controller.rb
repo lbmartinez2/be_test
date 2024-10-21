@@ -4,7 +4,7 @@ class Api::UsersController < ApplicationController
     password = request.headers['X-Password']
 
     response = HTTParty.get(
-      "http://zyx-martinez-be-test.atwebpages.com/wp-json/wp/v2/users",
+      "#{ENV["WP_API_URL"]}/users",
       headers: {
         'Authorization' => "Basic #{Base64.strict_encode64("#{username}:#{password}")}"
       }
